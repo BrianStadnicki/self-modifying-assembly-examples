@@ -1,0 +1,6 @@
+*.disasm
+*.o
+*.tmp
+*.elf
+peda-session-*.txt
+.gdb_history
