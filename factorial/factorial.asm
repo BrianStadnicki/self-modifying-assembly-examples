@@ -7,7 +7,7 @@ section .text
 	global _start
 
 _start:
-    mov eax, 0x700
+    mov eax, 0x5
     call factorial
 
     push eax
