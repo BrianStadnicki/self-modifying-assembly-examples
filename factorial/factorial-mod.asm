@@ -34,12 +34,10 @@ factorial_start:
     mul ebx
 
     ; decrement
-    mov ebx, dword [factorial_start+1]
-    sub ebx, 1
-    mov dword [factorial_start+1], ebx
+    dec dword [factorial_start+1]
     ; exit if at 0
     ; could exit at 1, but then it doesn't handle 0x2
-    cmp ebx, 0
+    cmp ebx, 1
     je factorial_end
     ; loop back
     jmp factorial_start
